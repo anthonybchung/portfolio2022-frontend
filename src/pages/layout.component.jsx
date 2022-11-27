@@ -5,7 +5,7 @@ const LayOut = () => {
   return (
     <div>
       <NavigationBar />
-      {Outlet}
+      <Outlet />
     </div>
   );
 };
