@@ -14,7 +14,7 @@ const NavigationBar = () => {
   return (
     <Navbar bg="primary" variant="dark" expand="md">
       <Container>
-        <NavLink to="/home" className="navigation-link">
+        <NavLink to="/" className="navigation-link">
           Home
         </NavLink>
         <Navbar.Toggle aria-controls="navbarScroll" />

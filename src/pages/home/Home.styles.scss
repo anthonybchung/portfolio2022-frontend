@@ -1,3 +1,72 @@
 .banner-container {
-  background-color: red;
+  margin-top: 150px;
+
+  .banner-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .stack-logo {
+      width: 104px;
+      height: 16px;
+      border-radius: 4px;
+      margin: 2px;
+      padding: 4px;
+      color: white;
+      display: flex;
+
+      align-items: center;
+      font-size: 10px;
+      background-color: black;
+    }
+
+    .stack-top {
+      animation: topcover 10s infinite;
+      animation-direction: alternate;
+      transform-origin: top left;
+      background-color: red;
+    }
+
+    @keyframes topcover {
+      0% {
+        transform: rotate(0deg);
+        background-color: rgb(161, 0, 0);
+      }
+      50% {
+        transform: rotate(-4deg);
+        background-color: rgb(255, 25, 0);
+      }
+      100% {
+        transform: rotate(0deg);
+        background-color: rgb(161, 0, 0);
+      }
+    }
+
+    .banner-heading {
+      margin-top: 10px;
+    }
+  }
+}
+
+.social-links {
+  margin: 60px auto;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+}
+
+.key-projects {
+  margin: 100px auto;
+}
+
+@media (max-width: 679px) {
+  .banner-container {
+    margin-top: 50px;
+  }
+
+  .work-experience {
+    margin-top: 50px;
+  }
 }
