@@ -19,7 +19,6 @@ const KeyProjects = () => {
   }, []);
 
   const projectLists = projects.map((project, index) => {
-    console.log(project);
     return (
       <Card key={index} style={{ width: "36rem", margin: "18px" }}>
         <Card.Body>

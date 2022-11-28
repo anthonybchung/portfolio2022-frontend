@@ -4,6 +4,7 @@ import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import "./Home.styles.scss";
 import KeyProjects from "../../components/keyProjects/KeyProjects.component";
+import WorkExperience from "../../components/workExperience/WorkExperience.component";
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ const Home = () => {
 
       <section className="work-experience">
         <h1> Work Experience</h1>
+        <WorkExperience />
       </section>
     </Container>
   );
