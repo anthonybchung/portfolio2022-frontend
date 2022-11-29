@@ -22,7 +22,7 @@ const WorkExperience = () => {
 
   const workExperienceList = workExperiences.map((workExperience, index) => {
     return (
-      <Card key={index} style={{ width: "48rem", margin: "18px" }}>
+      <Card key={index} className="work-experience-card">
         <Card.Body>
           <Card.Title>{workExperience.period}</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">

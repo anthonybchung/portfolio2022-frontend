@@ -12,7 +12,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <Navbar bg="primary" variant="dark" expand="md">
+    <Navbar bg="dark" variant="dark" expand="md">
       <Container>
         <NavLink to="/" className="navigation-link">
           Home
@@ -20,17 +20,17 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className="ms-auto my-2 my-lg-0"
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <NavLink
+            {/* <NavLink
               className="navigation-link"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               to="/side-projects"
             >
               Side Projects
-            </NavLink>
+            </NavLink> */}
             <NavLink
               className="navigation-link"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -46,7 +46,13 @@ const NavigationBar = () => {
               About Me
             </NavLink>
           </Nav>
-          <Button className="d-flex">Login</Button>
+          {/* <NavLink
+            to="/login"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            className=" navigation-link d-flex"
+          >
+            Login
+  </NavLink>*/}
         </Navbar.Collapse>
       </Container>
     </Navbar>
