@@ -4,7 +4,7 @@ nav {
   background-color: #62bbc1;
 
   .nav-container {
-    width: 992px;
+    max-width: 992px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -19,9 +19,48 @@ nav {
       color: black;
     }
 
-    .nav-item-active {
-      font-weight: bolder;
-      text-decoration: underline;
+    .btn-menu {
+      display: none;
+    }
+  }
+}
+
+.slide-menu {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  nav {
+    .nav-container {
+      align-items: center;
+
+      .btn-menu {
+        display: flex;
+        height: 48px;
+        width: 48px;
+        align-items: center;
+        margin: 0 16px 0 auto;
+      }
+
+      .menu-item {
+        display: none;
+      }
+    }
+  }
+  .slide-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #fffbfc;
+    width: 100%;
+    height: 100vh;
+    transition-duration: 0.5s;
+    overflow: hidden;
+
+    .nav-item {
+      margin: 16px 32px 16px auto;
+      text-decoration: none;
+      color: black;
     }
   }
 }

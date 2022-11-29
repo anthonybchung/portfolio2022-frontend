@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 import "./NavigationBar.styles.scss";
 
@@ -28,30 +30,74 @@ const NavigationBar = () => {
     textDecoration: "underline",
   };
 
+  const [isClosed, setIsClosed] = useState(true);
+
+  const handleSlideMenu = () => {
+    setIsClosed(!isClosed);
+  };
+
   return (
-    <nav>
-      <div className="nav-container">
-        <div className="logo">
-          <NavLink to="/" className="nav-item">
-            Home
-          </NavLink>
+    <>
+      <nav>
+        <div className="nav-container">
+          <div className="logo">
+            <NavLink
+              to="/"
+              className="nav-item"
+              onClick={() => {
+                setIsClosed(false);
+              }}
+            >
+              logo
+            </NavLink>
+          </div>
+          <div className="btn-menu" onClick={handleSlideMenu}>
+            {isClosed ? (
+              <FontAwesomeIcon icon={faXmark} size="2x" />
+            ) : (
+              <FontAwesomeIcon icon={faBars} size="2x" />
+            )}
+          </div>
+          <div className="menu-item">
+            {menuItem.map((item, index) => {
+              return (
+                <NavLink
+                  to={item.path}
+                  key={index}
+                  className="nav-item"
+                  style={({ isActive }) =>
+                    isActive ? isActiveStyle : undefined
+                  }
+                >
+                  {item.name}
+                </NavLink>
+              );
+            })}
+          </div>
         </div>
-        <div className="menu-item">
-          {menuItem.map((item, index) => {
-            return (
-              <NavLink
-                to={item.path}
-                key={index}
-                className="nav-item"
-                style={({ isActive }) => (isActive ? isActiveStyle : undefined)}
-              >
-                {item.name}
-              </NavLink>
-            );
-          })}
-        </div>
+      </nav>
+      <div
+        className="slide-menu"
+        style={isClosed ? { height: "100vh" } : { height: "0px" }}
+      >
+        {" "}
+        {menuItem.map((item, index) => {
+          return (
+            <NavLink
+              to={item.path}
+              key={index}
+              className="nav-item"
+              style={({ isActive }) => (isActive ? isActiveStyle : undefined)}
+              onClick={() => {
+                setIsClosed(false);
+              }}
+            >
+              {item.name}
+            </NavLink>
+          );
+        })}
       </div>
-    </nav>
+    </>
   );
 };
 
