@@ -17,7 +17,6 @@ const WorkExperience = () => {
       }
     };
     fetchWorkExperiences();
-    console.log(workExperiences);
   }, []);
 
   const workExperienceList = workExperiences.map((workExperience, index) => {
@@ -31,11 +30,9 @@ const WorkExperience = () => {
             {workExperience.profession}
           </Card.Subtitle>
           <Card.Text>
-            <ul>
-              {workExperience.responsibilities.map((responsibility, index) => {
-                return <li key={index}>{responsibility}</li>;
-              })}
-            </ul>
+            {workExperience.responsibilities.map((responsibility, index) => {
+              return <li key={index}>{responsibility}</li>;
+            })}
           </Card.Text>
         </Card.Body>
       </Card>

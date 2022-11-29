@@ -8,7 +8,7 @@ import WorkExperience from "../../components/workExperience/WorkExperience.compo
 
 const Home = () => {
   return (
-    <Container fluid="md">
+    <main className="home-main">
       <section className="banner-container">
         <div className="banner-main">
           <div className="stack-logo stack-top"></div>
@@ -22,11 +22,15 @@ const Home = () => {
             .com
           </div>
           <h1 className="banner-heading"> Full Stack Developer</h1>
+          <h6>
+            A passionate web app developer that loves to build clean codes.
+          </h6>
         </div>
       </section>
       <section className="social-links">
         <Button
-          variant="outline-danger"
+          style={{ color: "#ec058c" }}
+          variant="link"
           href="https://github.com/anthonybchung"
           target="_blank"
         >
@@ -34,7 +38,8 @@ const Home = () => {
         </Button>
 
         <Button
-          variant="outline-danger"
+          style={{ color: "#ec058c" }}
+          variant="link"
           href="https://www.linkedin.com/in/anthony-b-chung/"
           target="_blank"
         >
@@ -51,7 +56,7 @@ const Home = () => {
         <h1> Work Experience</h1>
         <WorkExperience />
       </section>
-    </Container>
+    </main>
   );
 };
 

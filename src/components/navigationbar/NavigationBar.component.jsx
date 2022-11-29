@@ -30,7 +30,7 @@ const NavigationBar = () => {
     textDecoration: "underline",
   };
 
-  const [isClosed, setIsClosed] = useState(true);
+  const [isClosed, setIsClosed] = useState(false);
 
   const handleSlideMenu = () => {
     setIsClosed(!isClosed);
