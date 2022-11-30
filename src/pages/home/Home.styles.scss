@@ -4,6 +4,8 @@
   background-color: #fffbfc;
 }
 .banner-container {
+  max-width: 992px;
+
   .banner-main {
     display: flex;
     flex-direction: column;
