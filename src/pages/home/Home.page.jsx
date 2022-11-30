@@ -1,4 +1,3 @@
-import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -25,21 +24,24 @@ const Home = () => {
         </div>
       </section>
       <section className="social-links">
-        <Button
-          variant="outline-danger"
+        <a
           href="https://github.com/anthonybchung"
           target="_blank"
+          rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faGithubSquare} size="3x" />
-        </Button>
-
-        <Button
-          variant="outline-danger"
+          <button type="button" className="social-button">
+            <FontAwesomeIcon icon={faGithubSquare} size="3x" />
+          </button>
+        </a>
+        <a
           href="https://www.linkedin.com/in/anthony-b-chung/"
           target="_blank"
+          rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedin} size="3x" />
-        </Button>
+          <button type="button" className="social-button">
+            <FontAwesomeIcon icon={faLinkedin} size="3x" />
+          </button>
+        </a>
       </section>
 
       <section className="key-projects">
