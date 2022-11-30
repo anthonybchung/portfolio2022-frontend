@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "../../config/axios";
-import { Card } from "react-bootstrap";
+
 import "./keyProjects.styles.scss";
 const KeyProjects = () => {
   const SIDE_PROJECTS_URL = "api/v1/side-projects/";
