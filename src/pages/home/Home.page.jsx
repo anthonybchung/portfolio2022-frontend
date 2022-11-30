@@ -1,4 +1,4 @@
-import { Container, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -8,7 +8,7 @@ import WorkExperience from "../../components/workExperience/WorkExperience.compo
 
 const Home = () => {
   return (
-    <Container fluid="md">
+    <main className="home-container">
       <section className="banner-container">
         <div className="banner-main">
           <div className="stack-logo stack-top"></div>
@@ -51,7 +51,7 @@ const Home = () => {
         <h1> Work Experience</h1>
         <WorkExperience />
       </section>
-    </Container>
+    </main>
   );
 };
 
