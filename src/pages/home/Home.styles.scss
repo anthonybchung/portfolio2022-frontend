@@ -7,7 +7,7 @@
 
 .banner-container {
   width: 100%;
-  height: 400px;
+  height: 350px;
   display: flex;
   justify-content: center;
 
@@ -62,11 +62,17 @@
 }
 
 .social-links {
-  margin: 0px auto;
+  margin: 32px auto;
   max-width: 600px;
   display: flex;
   justify-content: space-around;
   height: 60px;
+
+  .social-button {
+    border-width: 0px;
+    color: #ec058c;
+    background-color: #fffbfc;
+  }
 }
 
 .key-projects {
