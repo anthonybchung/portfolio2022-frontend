@@ -2,4 +2,79 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+
+  .project-card {
+    width: 470px;
+    margin: 8px 0px;
+    padding: 8px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #62bbc1;
+    border-radius: 16px;
+
+    .card-title {
+      width: 100%;
+      margin-bottom: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .card-type {
+      font-size: 24px;
+      margin: 0px auto 0px 5px;
+    }
+
+    .card-github {
+      margin: 0px 5px 0px auto;
+      color: #ec058c;
+    }
+
+    .card-subtitle {
+      font-size: 20px;
+    }
+
+    .card-description {
+      font-size: 16px;
+      margin-top: 4px;
+    }
+
+    .card-key-points {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .key-projects-container {
+    padding: 0px 10px;
+
+    .project-card {
+      margin: 4px 0px;
+      border-width: 2px;
+      border-radius: 8px;
+
+      .card-type {
+        font-size: 18px;
+      }
+
+      .card-subtitle {
+        font-size: 14px;
+      }
+
+      .card-description {
+        font-size: 12px;
+      }
+
+      .card-key-points {
+        font-size: 12px;
+      }
+
+      .card-github {
+        margin-top: auto;
+        margin-bottom: 5px;
+      }
+    }
+  }
 }
