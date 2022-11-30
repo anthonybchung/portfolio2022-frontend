@@ -27,22 +27,22 @@ const Home = () => {
         </div>
       </section>
       <section className="social-links">
-        <Button
-          style={{ color: "#ec058c" }}
+        <a
           href="https://github.com/anthonybchung"
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faGithubSquare} size="3x" />
-        </Button>
+          <button type="button">
+            <FontAwesomeIcon icon={faGithubSquare} size="3x" />
+          </button>
+        </a>
 
-        <Button
-          variant="outline-danger"
+        <a
           href="https://www.linkedin.com/in/anthony-b-chung/"
           target="_blank"
           rel="noreferrer"
         >
-          <button type="button" className="social-button">
+          <button>
             <FontAwesomeIcon icon={faLinkedin} size="3x" />
           </button>
         </a>
