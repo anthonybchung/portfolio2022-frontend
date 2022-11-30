@@ -29,7 +29,6 @@ const Home = () => {
       <section className="social-links">
         <Button
           style={{ color: "#ec058c" }}
-          variant="link"
           href="https://github.com/anthonybchung"
           target="_blank"
           rel="noreferrer"
