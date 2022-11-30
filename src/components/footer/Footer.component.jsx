@@ -1,12 +1,11 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+
+import "./Footer.styles.scss";
 
 const Footer = () => {
   return (
-    <footer>
-      <Container>
-        <p>&copy; 2022: Anthony B. Chung</p>
-      </Container>
+    <footer className="footer-container">
+      <p>&copy; 2022: Anthony B. Chung</p>
     </footer>
   );
 };

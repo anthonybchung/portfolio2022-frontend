@@ -21,21 +21,18 @@ const WorkExperience = () => {
 
   const workExperienceList = workExperiences.map((workExperience, index) => {
     return (
-      <Card key={index} className="work-experience-card">
-        <Card.Body>
-          <Card.Title>{workExperience.period}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
-            {workExperience.company}
-            <br></br>
-            {workExperience.profession}
-          </Card.Subtitle>
-          <Card.Text>
-            {workExperience.responsibilities.map((responsibility, index) => {
-              return <li key={index}>{responsibility}</li>;
-            })}
-          </Card.Text>
-        </Card.Body>
-      </Card>
+      <div key={index} className="work-experience-card">
+        <h3 className="card-title">{workExperience.period}</h3>
+        <h4 className="card-company"> {workExperience.company}</h4>
+        <h5 className="card-profession"> {workExperience.profession}</h5>
+
+        <div className="card-responsibilities">
+          {" "}
+          {workExperience.responsibilities.map((responsibility, index) => {
+            return <li key={index}>{responsibility}</li>;
+          })}
+        </div>
+      </div>
     );
   });
 

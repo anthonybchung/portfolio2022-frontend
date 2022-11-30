@@ -21,8 +21,8 @@ const Home = () => {
             .com
           </div>
           <h1 className="banner-heading"> Full Stack Developer</h1>
-          <h6>
-            A passionate web app developer that loves to build clean codes.
+          <h6 className="banner-slogan">
+            ReactJS - Ruby on Rails - NodeJS - MongoDB - PostgesSQL
           </h6>
         </div>
       </section>
