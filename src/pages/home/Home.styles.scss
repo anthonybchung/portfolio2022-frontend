@@ -1,4 +1,4 @@
-.banner-container {
+.home-container {
   max-width: 992px;
   background-color: #fffbfc;
   margin: 0px auto;
@@ -6,6 +6,16 @@
 }
 
 .banner-container {
+<<<<<<< HEAD
+  max-width: 992px;
+  background-color: #fffbfc;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.banner-container {
+=======
+>>>>>>> home
   width: 100%;
   height: 350px;
   display: flex;
@@ -37,21 +47,18 @@
       animation: topcover 10s infinite;
       animation-direction: alternate;
       transform-origin: top left;
-      background-color: red;
+      background-color: #62bbc1;
     }
 
     @keyframes topcover {
       0% {
         transform: rotate(0deg);
-        background-color: rgb(161, 0, 0);
       }
       50% {
         transform: rotate(-4deg);
-        background-color: rgb(255, 25, 0);
       }
       100% {
         transform: rotate(0deg);
-        background-color: rgb(161, 0, 0);
       }
     }
 
@@ -84,9 +91,6 @@
 }
 
 @media (max-width: 679px) {
-  .home-main {
-    padding: 0px 10px;
-  }
   .banner-container {
     width: 100%;
     height: 200px;

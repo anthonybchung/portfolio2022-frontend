@@ -7,7 +7,7 @@ import WorkExperience from "../../components/workExperience/WorkExperience.compo
 
 const Home = () => {
   return (
-    <main className="home-main">
+    <main className="home-container">
       <section className="banner-container">
         <div className="banner-main">
           <div className="stack-logo stack-top"></div>
@@ -32,17 +32,16 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button type="button">
+          <button type="button" className="social-button">
             <FontAwesomeIcon icon={faGithubSquare} size="3x" />
           </button>
         </a>
-
         <a
           href="https://www.linkedin.com/in/anthony-b-chung/"
           target="_blank"
           rel="noreferrer"
         >
-          <button>
+          <button type="button" className="social-button">
             <FontAwesomeIcon icon={faLinkedin} size="3x" />
           </button>
         </a>
