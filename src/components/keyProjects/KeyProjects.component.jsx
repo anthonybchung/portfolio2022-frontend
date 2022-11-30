@@ -20,29 +20,30 @@ const KeyProjects = () => {
 
   const projectLists = projects.map((project, index) => {
     return (
-      <Card key={index} style={{ width: "36rem", margin: "18px" }}>
-        <Card.Body>
-          <Card.Title>{project.category}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
-            {project.name}
-          </Card.Subtitle>
-          <Card.Text>
-            <p>{project.description}</p>
-            <ul>
-              {project.keyPoints.map((keyPoint, index) => {
-                return <li key={index}>{keyPoint}</li>;
-              })}
-            </ul>
-          </Card.Text>
-          <Card.Link
-            className="text-danger"
+      <div className="project-card">
+        <div className="card-title">
+          {project.category}
+          <a
+            class="card-github"
             href={project.urlLink}
             target="_blank"
+            rel="noreferrer"
           >
             GitHub
-          </Card.Link>
-        </Card.Body>
-      </Card>
+          </a>
+        </div>
+        <div className="card-subtitle">{project.name}</div>
+        <div className="card-description">{project.description}</div>
+        <ul>
+          {project.keyPoints.map((keyPoint, index) => {
+            return (
+              <li className="card-key-points" key={index}>
+                {keyPoint}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     );
   });
   return <div className="key-projects-container">{projectLists}</div>;
