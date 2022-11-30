@@ -1,11 +1,11 @@
-.home-main {
-  max-width: 992px;
-  margin: 0 auto;
-  background-color: #fffbfc;
-}
 .banner-container {
   max-width: 992px;
+  background-color: #fffbfc;
+  margin: 0px auto;
+  padding: 10px;
+}
 
+.banner-container {
   .banner-main {
     display: flex;
     flex-direction: column;
@@ -32,18 +32,21 @@
       animation: topcover 10s infinite;
       animation-direction: alternate;
       transform-origin: top left;
-      background-color: #ec058c;
+      background-color: red;
     }
 
     @keyframes topcover {
       0% {
         transform: rotate(0deg);
+        background-color: rgb(161, 0, 0);
       }
       50% {
         transform: rotate(-4deg);
+        background-color: rgb(255, 25, 0);
       }
       100% {
         transform: rotate(0deg);
+        background-color: rgb(161, 0, 0);
       }
     }
 
