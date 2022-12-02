@@ -1,7 +1,7 @@
-import React from "react";
+import "./Blog.styles.scss";
 
 const Blog = () => {
-  return <div>Blog</div>;
+  return <main className="blog-container">blog</main>;
 };
 
 export default Blog;
