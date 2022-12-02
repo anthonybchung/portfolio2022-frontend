@@ -22,7 +22,10 @@ const Home = () => {
           </div>
           <h1 className="banner-heading"> Full Stack Developer</h1>
           <h6 className="banner-slogan">
-            ReactJS - Ruby on Rails - NodeJS - MongoDB - PostgesSQL
+            A programmer with several years of experience that have built
+            computer system that automate a wind tunnel, a LAMP stack for a
+            garment factory, and running an internet cafe with over 100
+            computers.
           </h6>
         </div>
       </section>

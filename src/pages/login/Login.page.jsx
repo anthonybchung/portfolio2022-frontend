@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Login.style.scss";
-import { Container, Form, Button } from "react-bootstrap";
+import "./Login.styles.scss";
 
 const Login = () => {
   const defaultfields = {

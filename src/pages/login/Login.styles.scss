@@ -23,6 +23,10 @@
     border-radius: 8px;
     color: white;
     background-color: #ec058c;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
