@@ -30,40 +30,38 @@ const Login = () => {
 
   return (
     <main className="login-container">
-      <section className="login-card">
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter user Name"
-              name="userName"
-              value={userName}
-              onChange={handleOnChange}
-            />
-          </Form.Group>
+      <form className="login-card">
+        <label for="userName" className="login-label">
+          User Name:
+        </label>
+        <input
+          type="text"
+          placeholder="Enter user Name"
+          name="userName"
+          value={userName}
+          onChange={handleOnChange}
+        />
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              name="password"
-              value={password}
-              onChange={handleOnChange}
-            />
-          </Form.Group>
+        <label for="password" className="login-label">
+          Password:
+        </label>
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          value={password}
+          onChange={handleOnChange}
+        />
 
-          <Button
-            variant="primary"
-            type="submit"
-            onClick={handleSubmit}
-            disabled={isDisabled}
-          >
-            Login
-          </Button>
-        </Form>
-      </section>
+        <button
+          type="submit"
+          onClick={handleSubmit}
+          disabled={isDisabled}
+          className="login-button"
+        >
+          Login
+        </button>
+      </form>
     </main>
   );
 };
