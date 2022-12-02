@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Login.style.scss";
 import { Container, Form, Button } from "react-bootstrap";
 
 const Login = () => {
@@ -28,40 +29,42 @@ const Login = () => {
   };
 
   return (
-    <Container fluid="md">
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Enter user Name"
-            name="userName"
-            value={userName}
-            onChange={handleOnChange}
-          />
-        </Form.Group>
+    <main className="login-container">
+      <section className="login-card">
+        <Form>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter user Name"
+              name="userName"
+              value={userName}
+              onChange={handleOnChange}
+            />
+          </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Password"
-            name="password"
-            value={password}
-            onChange={handleOnChange}
-          />
-        </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              type="password"
+              placeholder="Password"
+              name="password"
+              value={password}
+              onChange={handleOnChange}
+            />
+          </Form.Group>
 
-        <Button
-          variant="primary"
-          type="submit"
-          onClick={handleSubmit}
-          disabled={isDisabled}
-        >
-          Login
-        </Button>
-      </Form>
-    </Container>
+          <Button
+            variant="primary"
+            type="submit"
+            onClick={handleSubmit}
+            disabled={isDisabled}
+          >
+            Login
+          </Button>
+        </Form>
+      </section>
+    </main>
   );
 };
 

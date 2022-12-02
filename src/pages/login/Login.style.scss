@@ -1,0 +1,23 @@
+.login-container {
+  max-width: 992px;
+  background-color: #fffbfc;
+  margin: 0px auto;
+  padding: 5px;
+  height: 90vh;
+}
+
+.login-card {
+  max-width: 700px;
+  padding: 8px;
+  margin: 16px auto;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #62bbc1;
+  border-radius: 16px;
+}
+
+@media (max-width: 679px) {
+  login-container {
+    width: 100%;
+  }
+}
