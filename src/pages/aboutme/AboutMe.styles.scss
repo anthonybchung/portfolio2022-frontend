@@ -68,6 +68,20 @@
   p {
     text-indent: 1rem;
   }
+
+  .skill-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skill-category {
+    width: 30%;
+    margin: 0px 4px;
+    background: white;
+    padding: 4px;
+    border-radius: 8px;
+  }
 }
 
 @media (max-width: 679px) {
@@ -86,5 +100,17 @@
   .aboutme-section {
     margin-top: 32px;
     width: 100%;
+
+    .skill-container {
+      flex-direction: column;
+
+      .skill-category {
+        width: 100%;
+        margin: 0px 4px;
+        background: white;
+        padding: 8px;
+        border-radius: 8px;
+      }
+    }
   }
 }

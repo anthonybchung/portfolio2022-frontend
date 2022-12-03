@@ -79,6 +79,42 @@ const AboutMe = () => {
           control other mechanical devices and do data analysis.
         </p>
       </div>
+
+      <div className="aboutme-section">
+        <h5>Key Skills</h5>
+        <div className="skill-container">
+          <div className="skill-category">
+            <h6>Front End</h6>
+            <ul>
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SCSS</li>
+              <li>Axios</li>
+              <li>Rails Hotwire</li>
+            </ul>
+          </div>
+          <div className="skill-category">
+            <h6>Back End</h6>
+            <ul>
+              <li>Ruby on Rails</li>
+              <li>NodeJS/ExpressJS</li>
+              <li>MongDB</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div className="skill-category">
+            <h6>Other skills</h6>
+            <ul>
+              <li>Test Driven Development</li>
+              <li> Pair Programming</li>
+              <li> Clean Code</li>
+              <li> Git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
