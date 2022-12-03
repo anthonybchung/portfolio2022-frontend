@@ -27,6 +27,11 @@
 
   .card-responsibilities {
     font-size: 14px;
+
+    li {
+      list-style-type: none;
+      text-indent: 1rem;
+    }
   }
 }
 
