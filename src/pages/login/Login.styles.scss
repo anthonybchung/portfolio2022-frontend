@@ -13,6 +13,13 @@
     border-width: 2px;
     border-style: solid;
     border-color: #62bbc1;
+
+    &:focus {
+      border: none;
+      outline-style: solid;
+      outline-color: #ec058c;
+      outline-width: 2px;
+    }
   }
 
   button {

@@ -30,7 +30,7 @@ const Login = () => {
   return (
     <main className="login-container">
       <form className="login-card">
-        <label for="userName" className="login-label">
+        <label htmlFor="userName" className="login-label">
           User Name:
         </label>
         <input
@@ -41,7 +41,7 @@ const Login = () => {
           onChange={handleOnChange}
         />
 
-        <label for="password" className="login-label">
+        <label htmlFor="password" className="login-label">
           Password:
         </label>
         <input

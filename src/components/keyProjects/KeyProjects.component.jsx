@@ -20,11 +20,11 @@ const KeyProjects = () => {
 
   const projectLists = projects.map((project, index) => {
     return (
-      <div className="project-card">
+      <div key={index} className="project-card">
         <div className="card-title">
           {project.category}
           <a
-            class="card-github"
+            className="card-github"
             href={project.urlLink}
             target="_blank"
             rel="noreferrer"

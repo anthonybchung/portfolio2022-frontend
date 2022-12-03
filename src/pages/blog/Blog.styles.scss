@@ -4,4 +4,28 @@
   background-color: #fffbfc;
   margin: 0px auto;
   padding: 5px;
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-blog {
+    font-size: 12px;
+  }
+
+  .card-blog-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .blog-link {
+      color: #ec058c;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+}
+
+.blog-description {
+  margin: 0px auto 0px 8px;
 }
