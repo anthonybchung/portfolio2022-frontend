@@ -39,14 +39,16 @@ const BlogCards = () => {
             <h4 className="card-blog">{createdDate(blog.createdAtDate)} </h4>
           </div>
           <div>
-            <a
-              href={blog.gitHub}
-              target="_blank"
-              rel="noreferrer"
-              className="blog-link"
-            >
-              Github
-            </a>
+            {blog.gitHub && (
+              <a
+                href={blog.gitHub}
+                target="_blank"
+                rel="noreferrer"
+                className="blog-link"
+              >
+                Github
+              </a>
+            )}
           </div>
         </div>
         {descriptionList(blog.descriptions)}
