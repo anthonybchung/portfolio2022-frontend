@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-
+import Logo from "../../logo.svg";
 import "./NavigationBar.styles.scss";
 
 const NavigationBar = () => {
@@ -48,7 +48,7 @@ const NavigationBar = () => {
                 setIsClosed(false);
               }}
             >
-              logo
+              <img src={Logo} alt="ABChungSTACK Logo" />
             </NavLink>
           </div>
           <div className="btn-menu" onClick={handleSlideMenu}>
