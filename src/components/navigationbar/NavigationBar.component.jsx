@@ -7,10 +7,10 @@ import "./NavigationBar.styles.scss";
 
 const NavigationBar = () => {
   const menuItem = [
-    {
-      path: "/side-projects",
-      name: "Side Projects",
-    },
+    // {
+    //   path: "/side-projects",
+    //   name: "Side Projects",
+    // },
     {
       path: "/blog",
       name: "Blog",
@@ -19,10 +19,10 @@ const NavigationBar = () => {
       path: "/about-me",
       name: "About Me",
     },
-    {
-      path: "/login",
-      name: "Login",
-    },
+    // {
+    //   path: "/login",
+    //   name: "Login",
+    // },
   ];
 
   const isActiveStyle = {
